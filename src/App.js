@@ -46,7 +46,7 @@ export default class App extends Component {
   getClientToken = async () => {
     try {
       const response = await axios.get(
-        'https://1d2orkn1mx35m.educative.run/requestToken'
+        '/requestToken'
       );
       const clientToken = response.data.clientToken;
       this.setState({ clientToken });
@@ -75,7 +75,7 @@ export default class App extends Component {
       const { nonce } = await this.instance.requestPaymentMethod();
       const { totalPrice } = this.state;
       const response = await axios.post(
-        'https://1d2orkn1mx35m.educative.run/payment',
+        '/payment',
         {
           paymentMethodNonce: nonce,
           price: totalPrice
