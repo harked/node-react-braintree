@@ -1,5 +1,5 @@
 {
-    "name": "Nodejs React Braintree Demo",
+    "name": "NodeReactBraintree",
     "version": "1.0.0",
     "description": "This is an App to showcase API keys using braintree services",
     "main": "index.js",
